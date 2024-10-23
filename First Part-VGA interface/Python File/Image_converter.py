@@ -6,7 +6,7 @@ def combine_rgb_to_12bit(r, g, b):
 image = Image.open('Lena_75_100.png')
 image = image.convert('RGB')
 pixel = image.load()
-out_file = open('../Lena_mod_hex.txt', 'w')
+out_file = open('../../Lena_mod_hex.txt', 'w')
 
 # Scrittura file per riempire la memoria su quartus
 out_file.write('DEPTH = 32768;\n'
@@ -37,7 +37,7 @@ out_file.write('END;\n')
 out_file.close()
 
 # Scrittura file per riempire la memoria su digital
-out_file_bin = open('../Lena_mod_hex.bin', 'wb')
+out_file_bin = open('../../Lena_mod_hex.bin', 'wb')
 
 for y in range(256):
     for x in range(128):
