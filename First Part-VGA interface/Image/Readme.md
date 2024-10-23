@@ -1,0 +1,1 @@
+# Contenitore di Immagini
