@@ -25,7 +25,7 @@ Trovati questi valori il segnale che dobbiamo generare sarà il seguente
 Questo è valido se riusciamo a generare un pixel_clock di 40 MHz nel caso in cui non dovessimo farcela possiamo diminuire la pixel clock a patto di ridurre dello stesso fattore tutte le altre quantità, per esempio riusciamo a genere una frequenza di 10 MHz in questo caso tutti i parametri relativi alla sincronizzazione orizzontale andranno divisi per 4 
 | Scanline part  | Pixels | Time µs             |   
 | ------------- | ------------- | ------------- | 
-| Visible area | 400  |20    |
+| Visible area | 200  |20    |
 | Front porch  | 10   | 1    |
 | Sync pulse   | 32  | 3.2   |
 | Back porch   | 22   | 2.2  |
@@ -33,5 +33,6 @@ Questo è valido se riusciamo a generare un pixel_clock di 40 MHz nel caso in cu
 
 <img width="549" alt="H_sync_4" src="https://github.com/user-attachments/assets/60278fac-8f52-4372-b8d7-1bbbec57b3cc">\
 
-Per cui il circuito digitale che andremo ad implementare non è altro che un contatore, prima di passare al codice vhdl , mi è stato molto utile utilizzare un software di simulazione [Digital](https://github.com/hneemann/Digital))
+Per cui il circuito digitale che andremo ad implementare non è altro che un contatore, prima di passare al codice vhdl , mi è stato molto utile utilizzare un software di simulazione [Digital](https://github.com/hneemann/Digital)).\
+Quindi in questa prima fase occupiamoci di realizzare il circuito logico, ne caso 
 
